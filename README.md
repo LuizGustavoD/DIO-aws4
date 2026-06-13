@@ -48,6 +48,26 @@ Vantagens:
 - padronizacao de processos;
 - integracao com pipelines de CI/CD.
 
+## Terraform na AWS (Infraestrutura como Codigo)
+O **Terraform** e uma ferramenta de **Infrastructure as Code (IaC)** que permite criar e gerenciar recursos AWS por arquivos de configuracao.
+
+Conceitos principais:
+- **codigo declarativo**: voce descreve o estado desejado da infraestrutura;
+- **provider AWS**: conecta o Terraform com os servicos da AWS;
+- **plan**: mostra o que sera criado, alterado ou removido;
+- **apply**: executa as mudancas planejadas.
+
+Beneficios:
+- padronizacao de ambientes;
+- controle de versao da infraestrutura;
+- reproducao rapida de cenarios (dev, teste e producao);
+- reducao de erros manuais em criacao de recursos.
+
+Uso junto com deploy automatizado:
+- pipeline pode executar Terraform para preparar infraestrutura;
+- depois, a aplicacao e implantada com CodeDeploy/ECS/Lambda;
+- isso cria um fluxo completo de entrega: infraestrutura + aplicacao.
+
 ## Deploy automatizado na AWS
 Deploy automatizado e o processo de publicar aplicacoes sem etapas manuais repetitivas.
 
@@ -80,6 +100,7 @@ Ferramentas e servicos usados:
 ## Resumo Final
 - **AWS SDK** conecta seu codigo aos servicos AWS em varias linguagens.
 - **AWS CLI** automatiza operacoes via linha de comando.
+- **Terraform** automatiza infraestrutura como codigo com padrao e rastreabilidade.
 - **Deploy automatizado** melhora qualidade, velocidade e seguranca nas entregas.
 
 ### Aluno: Luiz Gustavo Dacome Damas
